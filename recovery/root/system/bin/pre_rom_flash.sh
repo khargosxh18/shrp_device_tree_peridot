@@ -11,8 +11,8 @@ LOGMSG "---$SCRIPT_NAME start---"
 LOGMSG "Resetting SPL date to prevent anti-rollback protection..."
 resetprop ro.build.version.security_patch 2023-12-31
 
-# LOGMSG "Formatting /metadata..."
-# make_f2fs /dev/block/bootdevice/by-name/metadata
+LOGMSG "Formatting /metadata..."
+make_f2fs /dev/block/bootdevice/by-name/metadata
 
 LOGMSG "Detecting active boot slot..."
 slot="$(getprop ro.boot.slot_suffix)"
