@@ -168,6 +168,28 @@ TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_APEX := true
 TW_HAS_EDL_MODE := true
 
+# SHRP Configuration
+SHRP_PATH := device/xiaomi/peridot
+
+SHRP_MAINTAINER := "khargosxh18"
+SHRP_DEVICE_CODE := "peridot"
+
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+
+SHRP_AB := true
+SHRP_EDL_MODE := true
+
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FLASHLIGHT_PATH := /sys/class/leds/led:torch_0/brightness
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_REC_TYPE := A/B
+SHRP_DEVICE_TYPE := A/B
+
 # Haptic
 FIXED_HAPTICS := true
 
