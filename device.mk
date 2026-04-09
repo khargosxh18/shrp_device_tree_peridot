@@ -24,9 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Configure twrp common.mk
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# some OrangeFox-specific settings
-$(call inherit-product, $(DEVICE_PATH)/fox_peridot.mk)
-
 PRODUCT_PACKAGES += \
     bootctrl.xiaomi_sm8635.recovery \
     android.hardware.boot@1.2-impl-qti.recovery
